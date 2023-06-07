@@ -216,17 +216,20 @@ main {
   margin-top: 1rem; 
 }
 
-/* footer */
+/* Footer Styles */
+
 footer {
-  background-color: #f9f9f9;
+  background-color: #f80000;
   padding: 2rem;
   text-align: center;
+  color: #fff;
 }
 
 .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .footer-logo {
@@ -239,17 +242,34 @@ footer {
   margin-left: 1rem;
 }
 
-.footer-link {
-  color: #f80000;
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
   text-decoration: none;
+  margin: 0 1rem;
   transition: color 0.3s ease;
 }
 
-.footer-link:hover {
-  color: #d90000;
+.footer-links a:hover {
+  color: #2a0303;
 }
 
+.footer-copyright {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+
 /*reviews*/
+
+.reviews-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
 .reviews-wrapper {
   display: flex;
@@ -259,17 +279,20 @@ footer {
 }
 
 .review-box {
-  border: 0.8rem solid #ccc;
+  border: 0.4rem solid #f80000;
   border-radius: 1rem;
   padding: 2rem;
   margin: 1rem;
   text-align: center;
-  width: 40rem; 
+  width: 30rem;
+  height: 33rem; 
+  display: inline-block;
+  text-align: center;
 }
 
 .review-box img {
-  width: 6.7rem;
-  height: 6.7rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -277,12 +300,13 @@ footer {
 .review-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 0.5rem;
 }
 
 .review-header .avatar {
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   margin-right: 1rem;
 }
@@ -295,4 +319,43 @@ footer {
 .review-text {
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+/*cards*/
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 0 30rem; 
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 3px solid #e1dede; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 15rem; 
+  object-fit: contain;
+  border-radius: 0.4rem;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
 }
