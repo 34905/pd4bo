@@ -1,6 +1,34 @@
 let allGames = document.getElementsByClassName("game");
 let filters = document.getElementsByClassName("filter");
 
+let minFilter = document.getElementById('minFilter');
+let maxFilter = document.getElementById('maxFilter');
+
+minFilter.onchange = function() {
+    for(let i = 0; i < allGames.length; i++){
+        let gamePrice =  parseInt(allGames[i].dataset.price, 10);
+
+        if (gamePrice >= minFilter.value && gamePrice <= maxFilter.value) {
+            console.log('tonen')
+            allGames[i].style.display = "block";
+        } else {
+            console.log('verbergen')
+            allGames[i].style.display = "none";
+        }
+    }
+}
+
+maxFilter.onchange = function() {
+    for(let i = 0; i < allGames.length; i++){
+        let gamePrice =  parseInt(allGames[i].dataset.price, 10);
+        if (gamePrice >= minFilter.value && gamePrice <= maxFilter.value) {
+            allGames[i].style.display = "block";
+        } else {
+            allGames[i].style.display = "none";
+        }
+    }
+}
+
 
 //hiermee start je altijd boven aan de pagina als je refresht
 window.scrollTo(0,0);

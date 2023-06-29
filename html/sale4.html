@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XYZK Hoops - Product Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="../css/sale4.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- header  -->
+    <header>
+      <img src="../picture/logo4bo4-removebg-preview.webp" alt="Logo" class="logo">
+      <nav>
+        <form>
+          <button formaction="/html/index.html">🏠</button>
+          <button formaction="/html/product.html">🏀</button>
+          <button formaction="/html/info.html">ℹ️</button>
+          <button formaction="/html/shop.html">🛒</button>
+        </form>
+      </nav>
+    </header>
+    <main class="container">
+
+      <!-- Left Column  -->
+      <section class="left-column">
+        <img data-image="black" src="../picture/basketball.black.webp" alt="basketball">
+        <img data-image="gray" src="../picture/basketball.gray.webp" alt="basketball">
+        <img data-image="white" class="active" src="../picture/basketball.white.webp" alt="basketball">
+      </section>
+
+
+      <!-- Right Column -->
+      <section class="right-column">
+
+        <!-- Product Description -->
+        <article class="product-description">
+          <span>basketball </span>
+          <h1> Nike Wonder</h1>
+          <p> nike ball size 7
+            Wonder variants</p>
+        </article>
+
+        <!-- Product Configuration -->
+        <article class="product-configuration">
+
+          <!-- Product Color -->
+          <section class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black" checked>
+                <label for="black"><span></span></label>
+              </div>
+              <div>
+                <input data-image="gray" type="radio" id="gray" name="color" value="gray">
+                <label for="gray"><span></span></label>
+              </div>
+              <div>
+                <input data-image="white" type="radio" id="white" name="color" value="white">
+                <label for="white"><span></span></label>
+              </div>
+            </div>
+
+          </section>
+
+        <!-- Product Pricing -->
+        <article class="product-price">
+          <span>20 Euro</span>
+          <a href="../html/shop.html" class="cart-btn">Add to cart</a>
+        </article>
+      </section>
+    </main>
+
+     <!-- Footer goes here -->
+    
+     <footer>
+      <div class="footer-content">
+        <img src="../picture/logo4bo4-removebg-preview.webp" alt="Footer Logo" class="footer-logo">
+        <div class="footer-links">
+          <a href="#">Phone: 06123456</a>
+          <a href="#">Email: xzykhoops@yahoo.com</a>
+          <a href="#">LinkedIn: XYZK Hoops</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2023 XYZK Hoops. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="../js/sale.js" defer></script>
+
+  </body>
+</html>

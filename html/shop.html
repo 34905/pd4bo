@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping Cart</title>
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="../js/shop.js" defer></script>
+</head>
+
+
+<body>
+    <section id="js--checkOutWindow" class="checkOut a-popup">
+        <ul class="checkOut__list">
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.alt.webp" alt="Football" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket1" class="checkOut__amount"></p>
+                <p id="js--price-basket1" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.black.webp" alt="Vollyball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket2" class="checkOut__amount"></p>
+                <p id="js--price-basket2" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.blue.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket3" class="checkOut__amount"></p>
+                <p id="js--price-basket3" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.bron.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket4" class="checkOut__amount"></p>
+                <p id="js--price-basket4" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.gray.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket5" class="checkOut__amount"></p>
+                <p id="js--price-basket5" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.jett.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket6" class="checkOut__amount"></p>
+                <p id="js--price-basket6" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.orange.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket7" class="checkOut__amount"></p>
+                <p id="js--price-basket7" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.panther.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket8" class="checkOut__amount"></p>
+                <p id="js--price-basket8" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.pink.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket9" class="checkOut__amount"></p>
+                <p id="js--price-basket9" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.sun.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket10" class="checkOut__amount"></p>
+                <p id="js--price-basket10" class="checkOut__price"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="../picture/basketball.white.webp" alt="Basketball" class="checkOut__image">
+                <p class="checkOut__title">Basketball</p>
+                <p id="js--amount-basket11" class="checkOut__amount"></p>
+                <p id="js--price-basket11" class="checkOut__price"></p>
+            </li>
+
+        </ul>
+    </section>
+    <article class="modal a-popup" id="js--shoppingModal">
+        ✓ Added to Cart
+    </article>
+    <button id="js--checkOutButton" class="shoppingCart">
+         🛒
+    <div class="shoppingCart__message">0</div>
+    </button>
+    <button class="custom-button" onclick="redirectToAnotherPage()">
+        🏡
+    </button>
+    
+    <main>
+        <ul class="games">
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.alt.webp" alt="een foto van een football" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€20</h2>
+                    <h3 class="games__h3">Basketball - alt</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket1" class="games__button">Add to Cart</button>
+                </section>
+                
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.black.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">Basketball - black</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket2" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.blue.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">Basketball - blue</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket3" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.bron.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€30</h2>
+                    <h3 class="games__h3">Basketball - lebron</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket4" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.gray.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">Basketball - gray</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket5" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.orange.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€20</h2>
+                    <h3 class="games__h3">Basketball - orange</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket6" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.panther.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">Basketball - panther</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket7" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.pink.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">Basketball - pink</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket8" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.sun.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">Basketball - sun</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket9" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.white.webp" alt="een foto van een vollyball" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€30</h2>
+                    <h3 class="games__h3">Basketball - white</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket10" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+
+            <li class="games__game games__game--third a-popup">
+                <figure class="game__figure"><img src="../picture/basketball.jett.webp" alt="een foto van een basketball" class="game__img"></figure>
+                <section class="games__body"> 
+                    <h2 class="games__h2">€35</h2>
+                    <h3 class="games__h3">Basketball - jett</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="basket11" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+
+    
+
+</body>
+</html> 

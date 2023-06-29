@@ -1,0 +1,249 @@
+/* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+/* Header */
+
+header {
+  background-color: #f80000;
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  align-items: center;
+  height: 6.4rem;
+}
+
+.logo {
+  width: 9.6rem;
+  height: 9.6rem;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav button {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #f80000;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+nav button:hover {
+  background-color: #f80000;
+  color: #fff;
+}
+
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 6.5rem;
+  display: flex;
+}
+
+/* Columns */
+.left-column {
+  width: 65%;
+  position: relative;
+}
+
+.right-column {
+  width: 35%;
+  margin-top: 3.6rem;
+}
+
+
+/* Left Column */
+.left-column img {
+  max-width: 35rem;
+  max-height: 35rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.left-column img.active {
+  opacity: 1;
+}
+
+
+/* Right Column */
+
+/* Product Description */
+.product-description {
+  border-bottom: 0.1rem solid #E1E8EE;
+  margin-bottom: 1.8rem;
+}
+.product-description span {
+  font-size: 0.8rem;
+  color: #b30000;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 3.1rem;
+  color: #43484D;
+  letter-spacing: -0.2rem;
+}
+.product-description p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 1.5rem;
+}
+
+/* Product Configuration */
+.product-color span,
+.cable-config span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #86939E;
+  margin-bottom: 1.8rem;
+  display: inline-block;
+}
+
+/* Product Color */
+.product-color {
+  margin-bottom: 2.7rem;
+}
+
+.color-choose div {
+  display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+  display: none;
+}
+
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: -0.1rem 0.4rem 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.color-choose input[type="radio"] + label span {
+  border: 0.2rem solid #FFFFFF;
+  box-shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,0.33);
+}
+
+.color-choose input[type="radio"]#jett + label span {
+  background-color: #87d5ee;
+}
+.color-choose input[type="radio"]#blue + label span {
+  background-color: #0a2771;
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: #171414;
+}
+
+.color-choose input[type="radio"]:checked + label span {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-price span {
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 1.8rem;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: #fd58f7;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+  transition: all 0.5s;
+}
+.cart-btn:hover {
+  background-color: #fd58f7;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f80000;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+
+ /* Responsive */
+ @media (max-width: 33.5rem) {
+  .container {
+    flex-direction: column;
+    margin-top: 3.6rem;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  .left-column img{
+    width: 30.5rem;
+    height: 12.5rem;
+    object-fit: contain;
+    background-color: transparent;
+    
+  }
+  .product-description h1 {
+  
+    font-size: 1.65rem;
+  }
+  .product-description p {
+    font-size: 0.65rem;
+  }
+}

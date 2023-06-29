@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XYZK Hoops - Product Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="../css/sale3.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- header  -->
+    <header>
+      <img src="../picture/logo4bo4-removebg-preview.webp" alt="Logo" class="logo">
+      <nav>
+        <form>
+          <button formaction="/html/index.html">🏠</button>
+          <button formaction="/html/product.html">🏀</button>
+          <button formaction="/html/info.html">ℹ️</button>
+          <button formaction="/html/shop.html">🛒</button>
+        </form>
+      </nav>
+    </header>
+    <main class="container">
+
+      <!-- Left Column  -->
+      <section class="left-column">
+        <img data-image="orange" src="../picture/basketball.orange.webp" alt="basketball">
+        <img data-image="panter" src="../picture/basketball.panther.webp" alt="basketball">
+        <img data-image="alt" class="active" src="../picture/basketball.alt.webp" alt="basketball">
+      </section>
+
+
+      <!-- Right Column -->
+      <section class="right-column">
+
+        <!-- Product Description -->
+        <article class="product-description">
+          <span>basketball </span>
+          <h1> Nike ProStar</h1>
+          <p> nike ball size 7
+            ProStar variantsr</p>
+        </article>
+
+        <!-- Product Configuration -->
+        <article class="product-configuration">
+
+          <!-- Product Color -->
+          <section class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="orange" type="radio" id="orange" name="color" value="orange" checked>
+                <label for="orange"><span></span></label>
+              </div>
+              <div>
+                <input data-image="panter" type="radio" id="panter" name="color" value="panter">
+                <label for="panter"><span></span></label>
+              </div>
+              <div>
+                <input data-image="alt" type="radio" id="alt" name="color" value="alt">
+                <label for="alt"><span></span></label>
+              </div>
+            </div>
+
+          </section>
+
+        <!-- Product Pricing -->
+        <article class="product-price">
+          <span>35 Euro</span>
+          <a href="../html/shop.html" class="cart-btn">Add to cart</a>
+        </article>
+      </section>
+    </main>
+
+     <!-- Footer goes here -->
+    
+     <footer>
+      <div class="footer-content">
+        <img src="../picture/logo4bo4-removebg-preview.webp" alt="Footer Logo" class="footer-logo">
+        <div class="footer-links">
+          <a href="#">Phone: 06123456</a>
+          <a href="#">Email: xzykhoops@yahoo.com</a>
+          <a href="#">LinkedIn: XYZK Hoops</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2023 XYZK Hoops. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="../js/sale.js" defer></script>
+
+  </body>
+</html>

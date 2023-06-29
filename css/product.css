@@ -37,7 +37,7 @@ nav button {
   background-color: #fff;
   color: #f80000;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -64,39 +64,47 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10rem;
+  gap: 5rem;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 
 .inputs > div {
   display: flex;
   align-items: center;
-  width: 40rem;
+  width: 20rem;
 }
 
 .filter {
-  width: 5rem;
-  height: 5rem;
-  margin-right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
   appearance: none;
   -webkit-appearance: none;
   background: #eee;
-  border-radius: 1rem;
-  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .filter:hover {
-  cursor: pointer;
+  background-color: #f80000;
 }
 
 .filter:checked {
-  background: rgba(0, 0, 0, 0.2);
+  background-color: #f80000;
+}
+
+.label {
+  color: #f80000;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .label:hover {
-  cursor: pointer;
+  text-decoration: underline;
 }
 
 .filter:checked ~ .label {
@@ -129,40 +137,130 @@ main {
   object-fit: cover;
 }
 
-/* Footer */
-
+/* Footer Styles */
 footer {
-  min-height: 30rem;
-  border-top: #e6e6e8 0.1rem solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 4rem;
-  background-color: #d20000;
-  font-size: 1.6rem;
+  background-color: #f80000;
+  padding: 1.5rem;
   text-align: center;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .footer-logo {
-  width: 15rem;
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
 }
 
 .footer-links {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .footer-links a {
-  color: #000;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  color: #2a0303;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  margin: 0 0.5rem;
+}
+
+.footer-social img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #2a0303;
 }
 
 .footer-copyright {
-  color: #000;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
+
+  section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  input[type="number"] {
+    width: 10rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #e40000;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    color: #222222;
+    background-color: #ffffff;
+  }
+
+ /* Media Queries */
+
+@media screen and (max-width: 70.625rem) {
+
+  .main{
+    padding: 1.5rem;
+  }
+
+  .game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .games {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputs{
+    gap: 1rem;
+    display: flex;
+  }
+
+  .label {
+    font-size: 1.6rem;
+  }
+  .filter{
+    width: 3rem ;
+    height:3rem;
+  }
+}
+

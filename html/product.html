@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XZYK Hoops</title>
-    <link rel="stylesheet" type="text/css" href="/css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
 </head>
 <body>
   <header>
-    <img src="/picture/logo4bo4-removebg-preview(2).png" alt="Logo" class="logo">
+    <img src="../picture/logo4bo4-removebg-preview.webp" alt="Logo" class="logo">
     <nav>
       <form>
-        <button formaction="/html/index.html">Home</button>
-        <button formaction="/html/product.html">Gear</button>
-        <button formaction="/merch.html">Merch</button>
-        <button formaction="/info.html">Info</button>
+        <button formaction="/html/index.html">🏠</button>
+        <button formaction="/html/product.html">🏀</button>
+        <button formaction="/html/info.html">ℹ️</button>
+        <button formaction="/html/shop.html">🛒</button>
       </form>
     </nav>
   </header>
@@ -51,36 +51,48 @@
         </div>
         
     </section>
+
+    <!--Price filter section-->
+    <section>
+      <input type="number" name="min" id="minFilter" value=0 />
+      <input type="number" name="max" id="maxFilter" value=100 />
+    </section>
+    
     <ul class="games">
-        <li class="game" data-category="adventure"><img src="/picture/basketball.orange.webp" alt="foto van fallout 3 de 3de instalatie vande fallout serie"></li>
-        <li class="game" data-category="shooter"><img src="/picture/basketball.blue.webp" alt="foto van call of duty black opps 2 de 2de instalatie van de serie"></li>
-        <li class="game" data-category="action"><img src="/picture/basketball.pink.webp" alt="foto van dark souls 2 de 2de instalatie van de serie "></li>
-        <li class="game" data-category="puzzle"><img src="/picture/basketball.sun.webp" alt="foto van thief de eerste instalatie van de serie"></li>
-        <li class="game" data-category="sport"><img src="/picture/basketball.black.webp" alt="foto van madden 15 de instalatie van 2014 2015"></li>
-        <li class="game" data-category="adventure"><img src="/picture/basketball.bron.webp" alt="foto van fallout 3 de 3de instalatie vande fallout serie"></li>
-        <li class="game" data-category="shooter"><img src="/picture/basketball.gray.webp" alt="foto van call of duty bblack opps 2 de 2de instalatie van de serie"></li>
-        <li class="game" data-category="action"><img src="/picture/basketball.white.webp" alt="foto van dark souls 2 de 2de instalatie van de serie "></li>
-        <li class="game" data-category="puzzle"><img src="/picture/basketball.alt.webp" alt="foto van thief de eerste instalatie van de serie"></li>
-        <li class="game" data-category="sport"><img src="/picture/basketball.panther.webp" alt="foto van madden 15 de instalatie van 2014 2015"></li>
+        <li class="game" data-price=10 data-category="adventure"><img src="../picture/basketball.orange.webp" alt="foto van fallout 3 de 3de instalatie vande fallout serie"></li>
+        <li class="game" data-price=20 data-category="shooter"><img src="../picture/basketball.blue.webp" alt="foto van call of duty black opps 2 de 2de instalatie van de serie"></li>
+        <li class="game" data-price=15 data-category="action"><img src="../picture/basketball.pink.webp" alt="foto van dark souls 2 de 2de instalatie van de serie "></li>
+        <li class="game" data-price=25 data-category="puzzle"><img src="../picture/basketball.sun.webp" alt="foto van thief de eerste instalatie van de serie"></li>
+        <li class="game" data-price=30 data-category="sport"><img src="../picture/basketball.black.webp" alt="foto van madden 15 de instalatie van 2014 2015"></li>
+        <li class="game" data-price=25 data-category="adventure"><img src="../picture/basketball.bron.webp" alt="foto van fallout 3 de 3de instalatie vande fallout serie"></li>
+        <li class="game" data-price=12 data-category="shooter"><img src="../picture/basketball.gray.webp" alt="foto van call of duty bblack opps 2 de 2de instalatie van de serie"></li>
+        <li class="game" data-price=30 data-category="action"><img src="../picture/basketball.white.webp" alt="foto van dark souls 2 de 2de instalatie van de serie "></li>
+        <li class="game" data-price=15 data-category="puzzle"><img src="../picture/basketball.alt.webp" alt="foto van thief de eerste instalatie van de serie"></li>
+        <li class="game" data-price=20 data-category="sport"><img src="../picture/basketball.panther.webp" alt="foto van madden 15 de instalatie van 2014 2015"></li>
     </ul>
   </main>
     <!-- Footer goes here -->
-    
+  
     <footer>
       <div class="footer-content">
-        <img src="/picture/logo4bo4-removebg-preview(2).png" alt="Footer Logo" class="footer-logo">
+        <img src="../picture/logo4bo4-removebg-preview.webp" alt="Footer Logo" class="footer-logo">
+        <div class="footer-links">
+          <a href="#">Phone: 06123456</a>
+          <a href="#">Email: xzykhoops@yahoo.com</a>
+          <a href="#">LinkedIn: XYZK Hoops</a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#">Phone - 06123456</a>
-        <a href="#">Mail - sambal@coemi.yahoo</a>
-        <a href="#">Linkedin - XZYK Hoops</a>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
       </div>
       <div class="footer-copyright">
         &copy; 2023 XYZK Hoops. All rights reserved.
       </div>
     </footer>
 
-
-  <script src="/js/main.js" defer></script>
+  <script src="../js/main.js" defer></script>
 </body>
 </html>
